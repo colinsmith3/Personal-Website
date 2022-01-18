@@ -272,7 +272,7 @@
 
 	   				<div class="timeline-content">
 	   					<h4>Fedex Ground</h4>
-	   					<p>For a slightly extended summer, I worked full-time as a delivery truck driver for Fedex Ground. There, I delivered customer packages throoughout Floyd County, Kentucky and soon was moved to a travel team of drivers to support unfilled routes in the Greater Cinncinati Area. This changed also included a pay raise and promotion,</p>
+	   					<p>For a slightly extended summer, I worked full-time as a delivery truck driver for Fedex Ground. There, I delivered customer packages throughout Floyd County, Kentucky and soon was moved to a travel team of drivers to support unfilled routes in the Greater Cinncinati Area. This changed also included a pay raise and promotion,</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -686,7 +686,7 @@
 			email: true
 		},
 		subject: {
-			presence: { allowEmpty: false },
+			presence: { allowEmpty: false }
 		},
 		message: {
 			presence: { allowEmpty: false }
@@ -725,6 +725,7 @@
 	if (!empty($_POST)) {
   	 $name = $_POST['name'];
   	 $email = $_POST['email'];
+	 $subject = $_POST['subject'];
   	 $message = $_POST['message'];
 
     	if (empty($name)) {
@@ -780,7 +781,7 @@
 	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
 	               </div>                       
                   <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
 	               </div>                      
                  <div class="form-field">
                      <button class="submitform">Submit</button>
